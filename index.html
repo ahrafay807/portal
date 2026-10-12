@@ -17,6 +17,10 @@
     display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px; }
   #fallback h1 { font-size: 18px; margin: 0 0 10px; }
   #fallback p { font-size: 14px; color: #AAAAAA; margin: 0 0 24px; max-width: 380px; }
+  #direct { position: fixed; right: 12px; bottom: 12px; z-index: 5; background: rgba(18,22,31,.85); color: #fff;
+    font: 600 12px -apple-system, "Segoe UI", Arial, sans-serif; text-decoration: none; padding: 8px 12px; border-radius: 16px;
+    opacity: .35; transition: opacity .2s; }
+  #direct:hover, #direct:focus { opacity: 1; }
   #fallback a { display: inline-block; background: #C8102E; color: #fff; text-decoration: none; font-weight: 700;
     font-size: 14px; padding: 12px 28px; border-radius: 8px; }
 </style>
@@ -24,14 +28,16 @@
 <body>
 
 <iframe id="app-frame"
-  src="https://script.google.com/macros/s/AKfycbw-zZ0J-SocV2Qvpb75dp3qHvcZeYuSssJDyKckl3rESfaQeRIf7wPmYwLh8AESk6Fgpw/exec"
+  src="https://script.google.com/macros/s/AKfycbyJeBnS3ighpeMSruJbrq_E7gOKKVSUEJjMGArg6dOMitlNmvygQ3g_pAiLTVHit0PqZA/exec"
   title="GoodWe Admin Command Center" allow="clipboard-write"></iframe>
+
+<a id="direct" href="https://script.google.com/macros/s/AKfycbyJeBnS3ighpeMSruJbrq_E7gOKKVSUEJjMGArg6dOMitlNmvygQ3g_pAiLTVHit0PqZA/exec" target="_top">Open directly ↗</a>
 
 <div id="fallback">
   <div class="logo">GW</div>
   <h1>GoodWe Pakistan — Admin Command Center</h1>
   <p>This page couldn't load inline. Open it directly instead — everything works the same way.</p>
-  <a href="https://script.google.com/macros/s/AKfycbw-zZ0J-SocV2Qvpb75dp3qHvcZeYuSssJDyKckl3rESfaQeRIf7wPmYwLh8AESk6Fgpw/exec" target="_top">Open Command Center</a>
+  <a href="https://script.google.com/macros/s/AKfycbyJeBnS3ighpeMSruJbrq_E7gOKKVSUEJjMGArg6dOMitlNmvygQ3g_pAiLTVHit0PqZA/exec" target="_top">Open Command Center</a>
 </div>
 
 <script>
